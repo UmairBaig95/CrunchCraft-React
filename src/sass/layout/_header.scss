@@ -1,0 +1,57 @@
+.header {
+  position: sticky;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  top: 0;
+  transition: all linear 0.3s;
+  .navbar-toggler-button {
+    border: none;
+    box-shadow: none;
+  }
+  &__links-box {
+    margin-right: 2rem;
+    &--links {
+      padding: 0.3rem 2rem;
+      border: 0.5px solid #aaaaaa;
+      font-weight: bold;
+      font-size: 13px;
+      cursor: pointer;
+      &:hover {
+        background-color: $color-green-dark;
+        border-color: $color-green-dark;
+        color: white;
+      }
+    }
+    &--socialLink
+    {
+      background-color: $color-green-dark ;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile)
+{
+  .header {
+    box-shadow: none !important;
+    padding: 0 !important;
+    &__links-box {
+      &--links {
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 0.3rem 2rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        cursor: pointer;
+        &:hover
+        {
+          background-color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+}

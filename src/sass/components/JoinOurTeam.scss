@@ -1,0 +1,13 @@
+.joinOurTeam {
+  padding-top: 3rem;
+  &__row {
+    &--heading {
+      max-width: 28rem;
+      font-weight: bold;
+      padding-bottom: 2rem;
+    }
+    &--socialIcon {
+   @include socialIcons($color-green-dark )
+    }
+  }
+}

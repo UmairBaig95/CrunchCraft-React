@@ -1,0 +1,37 @@
+.bg-colorDarkGreen
+{
+background-color: $color-green-dark;
+}
+.bg-colorLightPink
+{
+background-color: $bg-color-pink-light;
+}
+.bg-coloryellow
+{
+background-color: $color-darkYellow;
+}
+
+.bg-colorblue
+{
+background-color: $color-blue;
+}
+.bg-color-red
+{
+background-color: $color-red;
+}
+.bg-colorGrey
+{
+background-color: $color-grey;
+}
+.bg-colorGreen
+{
+background-color: $color-greenWork;
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .design
+    {
+        width: 50%;
+    }
+    
+}

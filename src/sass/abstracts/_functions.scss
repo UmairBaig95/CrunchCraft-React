@@ -1,0 +1,9 @@
+@mixin circle ($width,$height,$bg-color) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    border-radius: 100%;
+}

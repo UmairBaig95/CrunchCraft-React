@@ -1,0 +1,108 @@
+.learngo {
+  position: relative;
+  &:nth-child(odd) {
+    background-color: $color-skyblue;
+    .img-div {
+      margin: 0rem 2rem;
+    }
+    .learngo__row {
+      position: relative;
+      z-index: 1;
+      &::before {
+        @include circle(300px, 300px, $color-darkblue);
+        left: 34%;
+        top: -12%;
+        opacity: 0.2;
+      }
+    }
+  }
+  &:nth-child(even) {
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    .learngo__row {
+      background: white;
+      flex-direction: row-reverse;
+      position: relative;
+      z-index: 1;
+      &::before {
+        @include circle(300px, 300px, $color-green);
+        left: 52%;
+        top: -12%;
+        opacity: 1;
+      }
+      .img-div {
+        margin-right: 4rem;
+      }
+    }
+  }
+  &__container {
+    padding: 8rem 1rem;
+  }
+  &__row {
+    &--logo {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+    &--logoTitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+    &--heading {
+      font-size: 2rem;
+      font-weight: bold;
+      max-width: 400px;
+    }
+    &--content {
+      margin: 0;
+      padding: 1.5rem 0rem 0rem 0rem;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .learngo {
+    &:nth-child(odd) {
+      .learngo__row {
+        &::before {
+          @include circle(160px, 160px, $color-darkblue);
+          left: 34%;
+          top: -12%;
+          opacity: 0;
+        }
+      }
+    }
+    &:nth-child(even) {
+      .learngo__row {
+        &::before {
+          @include circle(160px, 160px, $color-green);
+          left: 40%;
+          top: -12%;
+          opacity: 0;
+        }
+        .img-div {
+          margin-right: 4rem;
+        }
+      }
+    }
+    &__container {
+      padding: 4rem 1rem;
+    }
+    &__row {
+      &--logo {
+      }
+      &--logoTitle {
+        font-size: 1.5rem;
+      }
+      &--heading {
+        font-size: 1.3rem;
+        max-width: 200px;
+      }
+      &--content {
+        margin: 0;
+        padding: 1rem 0rem 0rem 0rem;
+      }
+    }
+  }
+}

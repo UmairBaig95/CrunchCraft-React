@@ -1,0 +1,71 @@
+.technologyStack {
+  &__container {
+    position: relative;
+    z-index: 1;
+    &--heading {
+      max-width: 24rem;
+      font-weight: bold;
+      padding: 0.5rem 0rem;
+      &::after {
+        @include bd-design;
+        right: 5%;
+        top: 18%;
+      }
+    }
+    &::after {
+      @include bd-design;
+      top: 90%;
+      right: 15%;
+    }
+    &::before {
+      @include circle(300px, 300px, $color-green);
+      left: 75.9%;
+      top: 77%;
+      opacity: 1;
+    }
+  }
+  &__row {
+    position: relative;
+    &--heading {
+      font-weight: bold;
+      font-size: 18px;
+      padding: 2rem 0rem;
+      padding-left: 0.5rem;
+      &::before {
+        content: "";
+        background: url(../../assets/images/technologyStack/img/Ellipse.svg)
+          no-repeat;
+        position: absolute;
+        width: 230px;
+        height: 41px;
+        left: 0;
+        top: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .technologyStack {
+    &__container {
+      &--heading {
+        font-size: 1.2rem;
+        &::after {
+          display: none;
+        }
+      }
+      &::before {
+        @include circle(160px, 160px, $color-green);
+        left: 40%;
+        top: 77%;
+        opacity: 1;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &__row {
+      margin: 0rem 0.3rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+#phone-input
+{
+  .phone-input {
+    margin-top: 0.4rem;
+    border-bottom: 2px solid #d7dbda;
+  
+    &:hover,
+    :focus {
+      border-bottom: 2px solid #008379;
+    }
+    .form-control {
+      width: 100%;
+      background-color: $bg-color-pink-light;
+      border: none;
+      border-radius: 0px;
+      font-size: 1.2rem;
+      box-shadow: none ;
+    }
+    .flag-dropdown {
+      border: none;
+      background-color: $bg-color-pink-light;
+      &:hover,
+      :focus,
+      :active,
+      :visited {
+        @extend .flag-dropdown;
+      }
+      .selected-flag {
+        @extend .flag-dropdown;
+      }
+    }
+    
+  }
+}

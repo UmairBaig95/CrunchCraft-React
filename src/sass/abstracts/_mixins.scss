@@ -1,0 +1,73 @@
+@mixin textCenter {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  max-width: 450px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@mixin bd-design {
+  content: "";
+  background: url(../../assets/images/footerImages/bg-design.svg) no-repeat;
+  position: absolute;
+  width: 230px;
+  height: 41px;
+}
+
+@mixin socialIcons($bg-color) {
+  background: $bg-color;
+  display: inline;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: black;
+    svg {
+      fill: white;
+    }
+  }
+}
+
+@mixin button {
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  background-color: $color-green-dark;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}

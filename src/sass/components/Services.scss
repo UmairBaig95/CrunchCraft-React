@@ -1,0 +1,55 @@
+.services {
+  position: relative;
+  &::before {
+    @include circle(550px, 550px, $color-yellow);
+    bottom: -100px;
+    left: -14rem;
+  }
+  &__container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  &__row {
+    &--div
+    {
+      margin-bottom: 4rem;
+    }
+    &--title {
+      margin: 0.5rem 0rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile)
+{
+  .services {
+    &::before {
+      @include circle(400px, 400px, $color-yellow);
+      bottom: -100px;
+      left: -14rem;
+    }
+    &__container {
+      border-radius: 15px;
+      margin: 2rem;
+      max-width: 245px;
+    }
+    &__row {
+      button
+        {
+          &::before
+          {
+          color: #d4c800;
+          }
+        }
+      &--div
+      {
+        margin: 0;
+        padding: 1rem;
+
+        
+      }
+  }
+  }
+}

@@ -1,0 +1,23 @@
+.formikContainerMain {
+  border-radius: 0px;
+  border: none;
+  background-color: $bg-color-pink-light;
+  .card-body {
+    padding: 0rem;
+    padding-top: 2rem;
+  }
+
+  .submit {
+    width: 14rem;
+    border-radius: none !important;
+    border: none;
+    background-color: $color-green-dark;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .g-recaptcha {
+    transform:scale(0.90);
+    transform-origin:0 0;
+    }
+}

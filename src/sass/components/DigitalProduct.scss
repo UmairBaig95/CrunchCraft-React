@@ -1,0 +1,64 @@
+.digitalProduct {
+  &__heading {
+    max-width: 400px;
+    font-weight: bold;
+  }
+  &__paragraph {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 20%;
+      border: 0;
+      border-top: 2px solid $color-green-dark;
+      margin: 3em 0;
+      padding: 0;
+    }
+  }
+}
+.lottie {
+  position: absolute;
+  width: 76.5em;
+  height: auto;
+  top: -7rem;
+  right: -60px;
+}
+
+@media (max-width: $breakpoint-mobile)
+{
+  .digitalProduct {
+    &__paragraph {
+      &::after {
+        width: 40%;
+      
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .lottie {
+    position: static;
+    width: 100%;
+    margin-bottom: 3rem;
+    svg {
+      margin-left: -40%;
+      transform: scale(1.5) !important;
+    }
+  }
+}
+@media all and (min-width: 1200px) {
+  .lottie {
+    width: 84em;
+    right: -1%;
+    top: -9rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .lottie {
+    width: 75em;
+    top: 0rem;
+    right: 0px;
+  }
+}

@@ -1,0 +1,32 @@
+.ourServices {
+  &__row {
+    &--heading {
+      max-width: 28rem;
+      font-weight: bold;
+    }
+    &--content {
+      max-width: 28rem;
+    }
+    &--img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .ourServices {
+    &__container {
+      padding-top: 2rem;
+    }
+    &__row {
+      &--heading {
+        font-size: 1.2rem;
+      }
+      &--content {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+#socialMediaSelect {
+    margin-top: 0.3rem;
+  
+    .css-1s2u09g-control,
+    .css-1pahdxg-control {
+      border: none;
+      border-radius: 0px;
+      background-color: $bg-color-pink-light;
+      border-bottom: 2px solid #d7dbda;
+  
+      &:hover,
+      :focus {
+        @extend .css-1s2u09g-control;
+        background-color: $bg-color-pink-light;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        border-bottom: 2px solid #008379;
+      }
+  
+      .css-1kwwvb1-ValueContainer2 {
+        background-color: $bg-color-pink-light !important;
+        padding: 0rem;
+      }
+    }
+  
+    .css-ujecln-Input2 {
+      input[type="text"] {
+        background-color: none !important;
+      }
+    }
+  }
