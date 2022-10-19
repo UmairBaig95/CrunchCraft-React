@@ -56,15 +56,16 @@ p {
   }
  
 }
-@media (min-width: $breakpoint-mobile)
+@media (max-width: $breakpoint-mobile)
 {
-  ::-webkit-scrollbar {
-    width: 0.6em;
+  #services
+  {
+    .slick-next {
+      right: -35px !important;
   }
-  
-  ::-webkit-scrollbar-thumb {
-    background: $color-green-dark;
-    border-radius: 10px;
-    background-clip: content-box;
+  .slick-prev {
+    left: -35px !important;
+}
   }
+
 }

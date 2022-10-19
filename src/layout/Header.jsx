@@ -78,7 +78,7 @@ function Header() {
                       setToggle(true);
                       setChk(false);
                     }}
-                    className="nav-item"
+                    className="nav-item d-md-none d-block"
                   >
                     <Link
                       className="nav-link header__links-box--links"

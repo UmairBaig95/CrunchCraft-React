@@ -11,8 +11,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   &__row {
-    &--div
-    {
+    &--div {
       margin-bottom: 4rem;
     }
     &--title {
@@ -22,9 +21,9 @@
   }
 }
 
-@media (max-width: $breakpoint-mobile)
-{
+@media (max-width: $breakpoint-mobile) {
   .services {
+    padding: 0em 2em;
     &::before {
       @include circle(400px, 400px, $color-yellow);
       bottom: -100px;
@@ -32,24 +31,17 @@
     }
     &__container {
       border-radius: 15px;
-      margin: 2rem;
-      max-width: 245px;
     }
     &__row {
-      button
-        {
-          &::before
-          {
+      button {
+        &::before {
           color: #d4c800;
-          }
         }
-      &--div
-      {
+      }
+      &--div {
         margin: 0;
         padding: 1rem;
-
-        
       }
-  }
+    }
   }
 }
